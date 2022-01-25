@@ -1,2 +1,129 @@
 section#two
-	background-color: #B0FFAA
+	background-color: #FFFFFF
+	overflow: auto
+
+	.content
+		// background-color: #BADA55
+		margin: 10% 185px 0px
+		height: auto
+		display: inline-block
+		min-width: 485px
+		width: 65%
+
+		.two-content--sub
+			height: auto
+			// background-color: lightgrey
+			float: left
+			width: 381px
+
+			article
+				text-align: left
+
+			p
+				font-style: normal
+				font-size: .5em
+				font-weight: 500
+				color: #7D146C
+				margin: 0
+
+			h3
+				font-style: italic
+				font-size: 1.5em
+				font-weight: 600
+				color: #000
+				line-height: 1
+				margin: .3em 0
+
+			.two-content--sub--img
+				background-image : url(../images/img_two_content_sub_1-image.jpg)
+				background-position: 50% 50%
+				background-size: cover
+				background-repeat: no-repeat
+				height: 381px
+
+		.two-content--sub:last-child
+			float: right
+			width: calc(100% - 381px)
+			min-width: 485px
+
+			article
+				float: right
+				min-width: 485px
+				height: 178px
+				margin: 12px 0
+				width: 485px
+
+				.two-content--sub--img
+					background-image : url(../images/img_two_content_sub_2-image_1.jpg)
+					background-position: 50% 50%
+					background-size: cover
+					background-repeat: no-repeat
+					height: 178px
+					width: 178px
+					float: left
+
+				div
+					width: calc(100% - 178px)
+					float: right    
+
+
+				p
+					float: left
+					margin: 0 0 0 26px 
+
+					&:before
+						display: block
+						content: ""
+						height: 1px
+						position: absolute
+						width: 26px
+						background: #7d146c
+						top: 0.6em
+						left: 0px
+
+
+				h3
+					float: left
+					font-size: .7em
+					margin: 0 0 0 26px 
+
+
+
+				&:nth-child(2n)
+
+					.two-content--sub--img
+						background-image : url(../images/img_two_content_sub_2-image_2.jpg)
+						background-position: 50% 50%
+						background-size: cover
+						background-repeat: no-repeat
+						height: 178px
+						width: 178px
+						float: right
+
+					div
+						float: left
+						text-align: right
+
+					p
+						float: right
+						margin: 0 26px 0 0 
+
+						&:after
+							display: block
+							content: ""
+							height: 1px
+							position: absolute
+							width: 26px
+							background: #7d146c
+							top: 0.6em
+							left: auto
+							right: 0px
+
+						&:before
+							display: none
+
+
+					h3
+						float: right
+						font-size: .7em
+						margin: 0 26px 0 0 
